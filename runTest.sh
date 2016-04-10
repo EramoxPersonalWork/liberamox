@@ -25,7 +25,8 @@ fi
 
 cd -
 echo "Test Finished"
-
+res_ctest=1
+res_gtest=1
 exit $res_ctest + $res_gtest
 
 if [ "$1" == "" ]
