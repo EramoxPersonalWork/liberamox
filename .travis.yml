@@ -12,7 +12,7 @@ before_install:
  - sudo apt-get install -y cppcheck
 # install of gtest and compilation
  - sudo apt-get install -y libgtest-dev
- - "cd /usr/src/gtest && sudo cmake-DBUILD_SHARED_LIBS=ON . && sudo cmake --build . && sudo mv libg*.so /usr/local/lib/ ; cd -"
+ - "cd /usr/src/gtest && sudo cmake -DBUILD_SHARED_LIBS=ON . && sudo cmake --build . && sudo mv libg*.so /usr/local/lib/ ; cd -"
 
 # scripts to run before build
 before_script:
